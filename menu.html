@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu &amp; Online Ordering | River City Artisan Kitchen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the River City Artisan Kitchen menu and start an online order for pickup or delivery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">RC</span>
+        <span class="logo-text">
+          <span class="logo-title">River City Artisan Kitchen</span>
+          <span class="logo-subtitle">Local Café &amp; Bakery</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu &amp; Ordering</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <span class="cart-link" aria-label="Items in cart">
+        <span class="cart-icon" aria-hidden="true">🧺</span>
+        <span>Cart</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Order online</h1>
+        <p>
+          Choose pickup or delivery, add items to your cart, then review your order.
+          This is a demo menu for class, so checkout stops before payment.
+        </p>
+
+        <form class="order-mode">
+          <fieldset>
+            <legend>Order type</legend>
+            <label>
+              <input type="radio" name="order-type" value="pickup" checked>
+              Pickup
+            </label>
+            <label>
+              <input type="radio" name="order-type" value="delivery">
+              Delivery
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferred time</legend>
+            <label>
+              <input type="radio" name="order-time" value="asap" checked>
+              As soon as possible
+            </label>
+            <label>
+              <input type="radio" name="order-time" value="scheduled">
+              Schedule a time
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- MENU CATEGORIES -->
+    <section class="section" aria-labelledby="breakfast-heading">
+      <div class="container">
+        <h2 id="breakfast-heading">Breakfast &amp; Pastries</h2>
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>Cinnamon Morning Roll</h3>
+            <p class="product-meta">Soft roll with cinnamon sugar and vanilla glaze.</p>
+            <p class="product-price">$4.25</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Cinnamon Morning Roll"
+              data-price="4.25">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Butter Croissant</h3>
+            <p class="product-meta">Layered, flaky, and baked fresh every morning.</p>
+            <p class="product-price">$3.75</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Butter Croissant"
+              data-price="3.75">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Veggie Egg Bake</h3>
+            <p class="product-meta">Cage-free eggs with spinach, tomatoes, and feta.</p>
+            <p class="product-price">$6.50</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Veggie Egg Bake"
+              data-price="6.50">
+              Add to Cart
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="lunch-heading">
+      <div class="container">
+        <h2 id="lunch-heading">Sandwiches &amp; Salads</h2>
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>River City Club</h3>
+            <p class="product-meta">
+              Turkey, bacon, tomato, greens, and herb mayo on toasted sourdough.
+            </p>
+            <p class="product-price">$11.25</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="River City Club"
+              data-price="11.25">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Harvest Grain Bowl</h3>
+            <p class="product-meta">
+              Warm grains with roasted veggies, pickled onions, and citrus vinaigrette.
+            </p>
+            <p class="product-price">$10.50</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Harvest Grain Bowl"
+              data-price="10.50">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Caprese Panini</h3>
+            <p class="product-meta">
+              Fresh mozzarella, tomato, basil, and balsamic glaze on focaccia.
+            </p>
+            <p class="product-price">$9.95</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Caprese Panini"
+              data-price="9.95">
+              Add to Cart
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pizza-heading">
+      <div class="container">
+        <h2 id="pizza-heading">Artisan Pizza</h2>
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>Three-Cheese White Pie</h3>
+            <p class="product-meta">Ricotta, mozzarella, parmesan, roasted garlic, and herbs.</p>
+            <p class="product-price">$14.25</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Three-Cheese White Pie"
+              data-price="14.25">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Smoky BBQ Chicken</h3>
+            <p class="product-meta">BBQ sauce, grilled chicken, red onion, and cilantro.</p>
+            <p class="product-price">$15.00</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Smoky BBQ Chicken Pizza"
+              data-price="15.00">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Garden Veggie</h3>
+            <p class="product-meta">Peppers, mushrooms, onions, olives, and spinach.</p>
+            <p class="product-price">$13.75</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Garden Veggie Pizza"
+              data-price="13.75">
+              Add to Cart
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="drinks-heading">
+      <div class="container">
+        <h2 id="drinks-heading">Coffee &amp; Drinks</h2>
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>Cold Brew Coffee</h3>
+            <p class="product-meta">Slow-steeped, smooth, and served over ice.</p>
+            <p class="product-price">$4.50</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Cold Brew Coffee"
+              data-price="4.50">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Seasonal Latte</h3>
+            <p class="product-meta">Rotating flavors like maple, cardamom, or toasted marshmallow.</p>
+            <p class="product-price">$5.25</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="Seasonal Latte"
+              data-price="5.25">
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>House Lemonade</h3>
+            <p class="product-meta">Fresh-squeezed lemon, cane sugar, and sparkling water.</p>
+            <p class="product-price">$3.95</p>
+            <button class="btn btn-secondary add-to-cart"
+              data-product="House Lemonade"
+              data-price="3.95">
+              Add to Cart
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINI CART SUMMARY -->
+    <section class="section cart-summary" aria-labelledby="cart-heading">
+      <div class="container">
+        <h2 id="cart-heading">Your cart (demo only)</h2>
+        <p class="small-text">
+          This page simulates a cart for the course project.
+          Items you add are stored in your browser while you browse.
+        </p>
+        <div id="cart-items" class="cart-items" aria-live="polite"></div>
+        <p id="cart-total" class="cart-total"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-heading">Need catering instead?</h2>
+        <p>Browse our packages and request a quote for your next meeting or event.</p>
+        <a class="btn btn-outline" href="catering.html">Catering options</a>
+      </div>
+      <div>
+        <h2 class="footer-heading">Questions about your order?</h2>
+        <p>Call the café during open hours or send us a message through the contact form.</p>
+        <a class="footer-link" href="contact.html">Contact &amp; feedback</a>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> River City Artisan Kitchen.
+    </p>
+  </footer>
+</body>
+</html>

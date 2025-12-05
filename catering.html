@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catering Packages | River City Artisan Kitchen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breakfast trays, boxed lunches, and dessert platters for offices and events. Request a custom catering quote from River City Artisan Kitchen.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">RC</span>
+        <span class="logo-text">
+          <span class="logo-title">River City Artisan Kitchen</span>
+          <span class="logo-subtitle">Local Café &amp; Bakery</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu &amp; Ordering</a></li>
+          <li><a href="catering.html" aria-current="page">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <span class="cart-link" aria-label="Items in cart">
+        <span class="cart-icon" aria-hidden="true">🧺</span>
+        <span>Cart</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Catering for teams &amp; gatherings</h1>
+        <p>
+          From morning meetings to evening celebrations, we can help you feed a crowd.
+          Choose a preset package or request a custom quote using the form below.
+        </p>
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="section" aria-labelledby="packages-heading">
+      <div class="container">
+        <h2 id="packages-heading">Popular packages</h2>
+        <div class="table-wrapper" role="region" aria-label="Catering packages table">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Package</th>
+                <th scope="col">Ideal group size</th>
+                <th scope="col">Includes</th>
+                <th scope="col">Starting price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sunrise Meeting Tray</th>
+                <td>10–15 guests</td>
+                <td>Assorted pastries, mini quiches, fresh fruit, and coffee carafe.</td>
+                <td>$145</td>
+              </tr>
+              <tr>
+                <th scope="row">Lunch &amp; Learn Boxed Meals</th>
+                <td>12–30 guests</td>
+                <td>Individually labeled sandwiches or grain bowls with chips and cookie.</td>
+                <td>$14 per guest</td>
+              </tr>
+              <tr>
+                <th scope="row">Flatbread &amp; Salad Spread</th>
+                <td>16–24 guests</td>
+                <td>Assorted pizzas, two salads, and house lemonade with cups &amp; ice.</td>
+                <td>$260</td>
+              </tr>
+              <tr>
+                <th scope="row">Dessert Celebration Table</th>
+                <td>20–40 guests</td>
+                <td>Mini cupcakes, cookies, whole cake, and seasonal sweets.</td>
+                <td>$220</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="small-text">
+          Prices shown are for demo purposes and can be adjusted as needed.
+          Final pricing may vary based on headcount and dietary requests.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section section-alt" aria-labelledby="quote-heading">
+      <div class="container form-two-column">
+        <div>
+          <h2 id="quote-heading">Request a catering quote</h2>
+          <p>
+            Share a few details about your event and we’ll respond by the next business
+            day with availability, suggested options, and a rough estimate.
+          </p>
+          <p class="small-text">
+            Fields marked with <span aria-hidden="true">*</span>
+            <span class="sr-only">asterisk</span> are required.
+          </p>
+        </div>
+
+        <form class="js-form" id="catering-form">
+          <div class="form-row">
+            <label for="event-name">Contact name *</label>
+            <input id="event-name" name="name" type="text" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <label for="event-email">Email *</label>
+            <input id="event-email" name="email" type="email" required autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <label for="event-phone">Phone</label>
+            <input id="event-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="form-row">
+            <label for="event-date">Event date *</label>
+            <input id="event-date" name="date" type="date" required>
+          </div>
+
+          <div class="form-row">
+            <label for="event-size">Estimated guest count *</label>
+            <input id="event-size" name="size" type="number" min="5" step="1" required>
+          </div>
+
+          <div class="form-row">
+            <label for="package-select">Package of interest</label>
+            <select id="package-select" name="package">
+              <option value="">I’m not sure yet</option>
+              <option>Sunrise Meeting Tray</option>
+              <option>Lunch &amp; Learn Boxed Meals</option>
+              <option>Flatbread &amp; Salad Spread</option>
+              <option>Dessert Celebration Table</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="event-notes">Dietary notes or special requests</label>
+            <textarea id="event-notes" name="notes" rows="4" placeholder="Example: vegetarian-friendly, nut-free, gluten-conscious options."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-heading">Planning ahead?</h2>
+        <p>We recommend booking 48 hours in advance for smaller groups and one week for 25+ guests.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Need a quick order instead?</h2>
+        <p>You can always place a same-day order from our regular menu.</p>
+        <a class="btn btn-outline" href="menu.html">View regular menu</a>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> River City Artisan Kitchen.
+    </p>
+  </footer>
+</body>
+</html>

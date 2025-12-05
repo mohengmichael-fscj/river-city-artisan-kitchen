@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>River City Artisan Kitchen | Café & Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="River City Artisan Kitchen – local café & bakery in Jacksonville, FL. Order fresh pastries, sandwiches, coffee, and catering online.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">RC</span>
+        <span class="logo-text">
+          <span class="logo-title">River City Artisan Kitchen</span>
+          <span class="logo-subtitle">Local Café &amp; Bakery</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu &amp; Ordering</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cart-link" href="menu.html">
+        <span class="cart-icon" aria-hidden="true">🧺</span>
+        <span>Cart</span>
+        <span id="cart-count" class="cart-count" aria-label="Items in cart">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Fresh-baked comfort, right in the heart of Jacksonville.</h1>
+          <p>
+            River City Artisan Kitchen is your neighborhood café &amp; bakery for
+            pastries, sandwiches, pizzas, and locally roasted coffee. Order ahead
+            for pickup, schedule delivery, or plan your next office catering.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="menu.html">Order Now</a>
+            <a class="btn btn-outline" href="catering.html">View Catering Packages</a>
+          </div>
+          <p class="hero-note">
+            Open daily • 7:00 AM – 8:00 PM • 5–7 mile delivery radius
+          </p>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/40/Bakery-products.jpg"
+            alt="Assorted cakes, cupcakes, and cookies displayed on a bakery table."
+            class="hero-image"
+          >
+          <figcaption class="sr-only">
+            Table filled with assorted bakery desserts like cupcakes, cookies, and cakes.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT STRIP -->
+    <section class="highlight-strip" aria-label="Ordering options">
+      <div class="container highlight-grid">
+        <article class="highlight-card">
+          <h2>Pickup</h2>
+          <p>Order online and skip the line. We’ll have your order ready on our pickup shelf.</p>
+        </article>
+        <article class="highlight-card">
+          <h2>Delivery</h2>
+          <p>Lunch at the office or dinner at home, delivered within our neighborhood radius.</p>
+        </article>
+        <article class="highlight-card">
+          <h2>Catering</h2>
+          <p>Breakfast platters, boxed lunches, and dessert trays for teams and events.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED MENU -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="featured-heading">Customer favorites</h2>
+          <p>Preview a few of our most loved items before you dive into the full menu.</p>
+        </header>
+
+        <div class="card-grid">
+          <article class="product-card">
+            <h3>River City Morning Box</h3>
+            <p class="product-meta">Assorted muffins, croissants, and mini quiches.</p>
+            <p class="product-price">$24.00</p>
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-product="River City Morning Box"
+              data-price="24.00"
+            >
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Jacksonville Sourdough</h3>
+            <p class="product-meta">Slow-fermented loaf, perfect for soups and sandwiches.</p>
+            <p class="product-price">$7.50</p>
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-product="Jacksonville Sourdough"
+              data-price="7.50"
+            >
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Brick-Oven Margherita</h3>
+            <p class="product-meta">Hand-stretched dough, fresh mozzarella, basil, and tomato.</p>
+            <p class="product-price">$13.00</p>
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-product="Brick-Oven Margherita"
+              data-price="13.00"
+            >
+              Add to Cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <h3>Cold Brew Flight</h3>
+            <p class="product-meta">Three rotating cold brew flavors with house syrups.</p>
+            <p class="product-price">$8.50</p>
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-product="Cold Brew Flight"
+              data-price="8.50"
+            >
+              Add to Cart
+            </button>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <a class="btn btn-primary" href="menu.html">Browse full menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIO / AMBIENCE -->
+    <section class="section section-alt" aria-labelledby="ambience-heading">
+      <div class="container ambience-grid">
+        <div>
+          <h2 id="ambience-heading">Settle into the café vibe</h2>
+          <p>
+            Curious what it feels like to grab a table here?
+            Press play for a short sample of our relaxed background music
+            while you browse the menu.
+          </p>
+          <p class="small-text">
+            Audio is optional and will not autoplay, so it is safe for shared or quiet spaces.
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <label for="cafe-audio" class="audio-label">
+            Café ambience sample (3 seconds)
+          </label>
+          <audio id="cafe-audio" controls>
+            <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / CTA -->
+    <section class="section" aria-labelledby="newsletter-heading">
+      <div class="container newsletter">
+        <div class="newsletter-text">
+          <h2 id="newsletter-heading">Weekly specials in your inbox</h2>
+          <p>
+            Get early access to seasonal pastries, pizza nights, and double-loyalty days.
+            We keep emails short, sweet, and no more than once a week.
+          </p>
+        </div>
+
+        <form class="newsletter-form js-form" aria-label="Join email list">
+          <div class="form-row">
+            <label for="newsletter-name">Name</label>
+            <input id="newsletter-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="newsletter-email">Email</label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Join the list</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-heading">Visit us</h2>
+        <p>
+          River City Artisan Kitchen<br>
+          Jacksonville, FL 32202<br>
+          Open daily • 7:00 AM – 8:00 PM
+        </p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Quick links</h2>
+        <ul class="footer-links">
+          <li><a href="menu.html">Order online</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="contact.html">Contact &amp; feedback</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Accessibility</h2>
+        <p class="small-text">
+          Designed with keyboard navigation, readable contrast, and descriptive
+          alt text in mind to support an inclusive experience.
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> River City Artisan Kitchen. For course use only.
+    </p>
+  </footer>
+</body>
+</html>

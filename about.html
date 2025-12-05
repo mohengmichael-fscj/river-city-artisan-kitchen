@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Our Café &amp; Bakery | River City Artisan Kitchen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about River City Artisan Kitchen, our local ingredients, and our neighborhood-focused mission.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">RC</span>
+        <span class="logo-text">
+          <span class="logo-title">River City Artisan Kitchen</span>
+          <span class="logo-subtitle">Local Café &amp; Bakery</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu &amp; Ordering</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <span class="cart-link" aria-label="Items in cart">
+        <span class="cart-icon" aria-hidden="true">🧺</span>
+        <span>Cart</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our story</h1>
+        <p>
+          River City Artisan Kitchen started as a weekend farmer’s market booth and
+          grew into a full café and bakery focused on scratch-made food, warm
+          hospitality, and neighborhood connection.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="origin-heading">
+      <div class="container about-grid">
+        <article>
+          <h2 id="origin-heading">Baked from scratch, every day</h2>
+          <p>
+            We proof dough overnight, roast veggies in-house, and partner with local
+            roasters for our coffee program. Our goal is to offer food that feels
+            comforting and familiar, while still being thoughtful about ingredients.
+          </p>
+          <p>
+            The menu balances classics like cinnamon rolls and margherita pizza with
+            seasonal specials, gluten-friendly choices, and vegetarian options.
+          </p>
+          <p>
+            When you order online, you see the same care: clear ingredients,
+            allergen notes, and order estimates that respect your time.
+          </p>
+        </article>
+
+        <aside aria-label="Short video tour of the bakery">
+          <div class="video-wrapper">
+            <video controls poster="https://upload.wikimedia.org/wikipedia/commons/4/40/Bakery-products.jpg">
+              <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p class="small-text">
+            Short sample video used for course demonstration, representing a quick
+            glimpse into a busy café environment.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="community-heading">
+      <div class="container">
+        <h2 id="community-heading">Community-first focus</h2>
+        <ul class="checklist">
+          <li>Rotating art wall featuring local creators.</li>
+          <li>Monthly fundraiser nights for neighborhood schools and nonprofits.</li>
+          <li>Occasional pop-up markets on the patio with small food vendors.</li>
+          <li>Pay-it-forward board for prepaid coffees and pastries.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hours-heading">
+      <div class="container hours-grid">
+        <div>
+          <h2 id="hours-heading">Hours &amp; location</h2>
+          <p>
+            Jacksonville, FL 32202<br>
+            (Imaginary address for course project)
+          </p>
+          <dl class="hours-list">
+            <div>
+              <dt>Weekdays</dt>
+              <dd>7:00 AM – 8:00 PM</dd>
+            </div>
+            <div>
+              <dt>Saturday</dt>
+              <dd>8:00 AM – 8:00 PM</dd>
+            </div>
+            <div>
+              <dt>Sunday</dt>
+              <dd>8:00 AM – 3:00 PM</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div aria-label="Static map placeholder">
+          <div class="map-placeholder">
+            <p>Map placeholder</p>
+            <p class="small-text">
+              On a production site, this could be an embedded map with directions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-heading">Ready to try us?</h2>
+        <p>Start an order online and we’ll have everything ready when you arrive.</p>
+        <a class="btn btn-primary" href="menu.html">Order now</a>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © <span id="year"></span> River City Artisan Kitchen.
+    </p>
+  </footer>
+</body>
+</html>
